@@ -41,17 +41,28 @@ public class Main {
         return h2Connection;
     }
 
+    //executeUpdate
     static void insertData(Connection h2Connection) throws SQLException {
         //INSERT INTO
         System.out.println("Inserting DATA");
         PreparedStatement insertStatement = h2Connection.prepareStatement("INSERT INTO employee (name,last_name,salary) VALUES (?,?,?)");
 
-        insertStatement.setString(1,"Juan");insertStatement.setString(2,"Jose");insertStatement.setDouble(3,123.45);
-        int rowsAffected = insertStatement.executeUpdate();
+        //-----
+        insertStatement.setString(1,"Juan");
+        insertStatement.setString(2,"Jose");
+        insertStatement.setDouble(3,123.45);
+        int rowsAffected = insertStatement.executeUpdate(); //Uso de executeUpdate();
         System.out.println("Rows affected: " + rowsAffected);
 
-        insertStatement.setString(1,"Carlos");insertStatement.setString(2,"Alejandro");insertStatement.setDouble(3,567.45);
-        rowsAffected = insertStatement.executeUpdate();
+        //-----
+        insertStatement.setString(1,"Carlos");
+        insertStatement.setString(2,"Alejandro");
+        insertStatement.setDouble(3,567.45);
+
+        Boolean execute = insertStatement.execute(); //Si usamos execute necesitamos usar getUpdateCount()
+        System.out.println("==>Is resultSet: " + execute);
+
+        rowsAffected = insertStatement.getUpdateCount(); //Uso de getUpdateCount();
         System.out.println("Rows affected: " + rowsAffected);
 
         insertStatement.close();
@@ -61,7 +72,13 @@ public class Main {
         System.out.println("=================================\nGetting Data");
         PreparedStatement selectStatement =  h2Connection.prepareStatement("SELECT * FROM employee");
 
-        ResultSet resultSet=selectStatement.executeQuery();
+        Boolean excecute = selectStatement.execute(); //Si usamos execute necesitamos usar getResultSet
+        System.out.println("==>Is resultSet: " + excecute);
+
+        //ResultSet resultSet=selectStatement.executeQuery(); //Uso de executeQuery
+        ResultSet resultSet=selectStatement.getResultSet();   //Uso de getResultSet
+
+
         while (resultSet.next()){
             System.out.printf("id: [%d] Name: [%s] LastName: [%s] Salary: [%f]\n",
                     resultSet.getInt(1),

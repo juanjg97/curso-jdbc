@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Conexión a H2, runScript para crear tabla, PreparedStatement para INSERT y DELETE">
+    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Se refactoriza el código poniendo los ejemplos dentro de funciones.&#10;&#10;Se prueba executeQuery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
@@ -67,11 +67,20 @@
       <option name="project" value="LOCAL" />
       <updated>1690419361547</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se refactoriza el código poniendo los ejemplos dentro de funciones.&#10;&#10;Se prueba executeQuery">
+      <option name="closed" value="true" />
+      <created>1690434363611</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690434363611</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Conexión a H2, runScript para crear tabla, PreparedStatement para INSERT y DELETE" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conexión a H2, runScript para crear tabla, PreparedStatement para INSERT y DELETE" />
+    <MESSAGE value="Se refactoriza el código poniendo los ejemplos dentro de funciones.&#10;&#10;Se prueba executeQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se refactoriza el código poniendo los ejemplos dentro de funciones.&#10;&#10;Se prueba executeQuery" />
   </component>
 </project>

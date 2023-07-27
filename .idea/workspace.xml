@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Se refactoriza el código poniendo en funciones los diferentes tipos de statement">
+    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ShellExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,7 +37,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ShellExample">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="curso-jdbc-v1" />
@@ -44,8 +51,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShellExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.ShellExample" />
+      <module name="curso-jdbc-v1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShellExample" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -83,13 +104,22 @@
       <option name="project" value="LOCAL" />
       <updated>1690435357591</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery">
+      <option name="closed" value="true" />
+      <created>1690477753370</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477753370</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Conexión a H2, runScript para crear tabla, PreparedStatement para INSERT y DELETE" />
     <MESSAGE value="Se refactoriza el código poniendo los ejemplos dentro de funciones.&#10;&#10;Se prueba executeQuery" />
     <MESSAGE value="Se refactoriza el código poniendo en funciones los diferentes tipos de statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se refactoriza el código poniendo en funciones los diferentes tipos de statement" />
+    <MESSAGE value="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery" />
   </component>
 </project>

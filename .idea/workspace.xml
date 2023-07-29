@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Creación de una Shell para ingresar comandos SQL.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransactionExample.java" afterDir="false" />
+    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransactionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TransactionExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690486778623</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros.">
+      <option name="closed" value="true" />
+      <created>1690577064200</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690577064200</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +152,7 @@
     <MESSAGE value="Se refactoriza el código poniendo en funciones los diferentes tipos de statement" />
     <MESSAGE value="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery" />
     <MESSAGE value="Creación de una Shell para ingresar comandos SQL." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creación de una Shell para ingresar comandos SQL." />
+    <MESSAGE value="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros." />
+    <option name="LAST_COMMIT_MESSAGE" value="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros." />
   </component>
 </project>

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros.">
+    <list default="true" id="fba84529-cb76-4fba-8094-1ae8a8ba7436" name="Changes" comment="Uso de rollback, savepoint, release savepoint y java faker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransactionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TransactionExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
   <component name="RunManager" selected="Application.TransactionExample">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="curso-jdbc-v1" />
+      <module name="curso-jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -54,7 +52,7 @@
     </configuration>
     <configuration name="ShellExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.ShellExample" />
-      <module name="curso-jdbc-v1" />
+      <module name="curso-jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -67,7 +65,7 @@
     </configuration>
     <configuration name="TransactionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TransactionExample" />
-      <module name="curso-jdbc-v1" />
+      <module name="curso-jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.*" />
@@ -143,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690577064200</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Uso de rollback, savepoint, release savepoint y java faker">
+      <option name="closed" value="true" />
+      <created>1690589066276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690589066276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +159,7 @@
     <MESSAGE value="Uso de excecute con getUpdateCount en lugar de excecuteUpdate y getResultSet en lugar de executeQuery" />
     <MESSAGE value="Creación de una Shell para ingresar comandos SQL." />
     <MESSAGE value="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros." />
-    <option name="LAST_COMMIT_MESSAGE" value="Uso de try with resources para cerrar automáticamente la conexión y statements. Creación de una clase employee y método para agregar registros." />
+    <MESSAGE value="Uso de rollback, savepoint, release savepoint y java faker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uso de rollback, savepoint, release savepoint y java faker" />
   </component>
 </project>

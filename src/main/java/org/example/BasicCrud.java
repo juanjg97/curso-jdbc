@@ -11,7 +11,7 @@ import java.util.Properties;
 
 import org.h2.tools.RunScript;
 
-public class Main {
+public class BasicCrud {
     public static void main(String[] args) throws SQLException, FileNotFoundException {
         Connection h2Connection = createConnection();
 
@@ -59,7 +59,7 @@ public class Main {
         insertStatement.setString(2,"Alejandro");
         insertStatement.setDouble(3,567.45);
 
-        Boolean execute = insertStatement.execute(); //Si usamos execute necesitamos usar getUpdateCount()
+        boolean execute = insertStatement.execute(); //Si usamos execute necesitamos usar getUpdateCount()
         System.out.println("==>Is resultSet: " + execute);
 
         rowsAffected = insertStatement.getUpdateCount(); //Uso de getUpdateCount();
@@ -68,11 +68,11 @@ public class Main {
         insertStatement.close();
     }
 
-    static void getData(Connection h2Connection) throws SQLException, FileNotFoundException {
+    static void getData(Connection h2Connection) throws SQLException {
         System.out.println("=================================\nGetting Data");
         PreparedStatement selectStatement =  h2Connection.prepareStatement("SELECT * FROM employee");
 
-        Boolean excecute = selectStatement.execute(); //Si usamos execute necesitamos usar getResultSet
+        boolean excecute = selectStatement.execute(); //Si usamos execute necesitamos usar getResultSet
         System.out.println("==>Is resultSet: " + excecute);
 
         //ResultSet resultSet=selectStatement.executeQuery(); //Uso de executeQuery

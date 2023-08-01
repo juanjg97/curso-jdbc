@@ -97,3 +97,40 @@ Es importante tener en cuenta que, por defecto, el modo de autocommit está habi
 Es una buena práctica restaurar el valor predeterminado del modo de autocommit (`setAutoCommit(true)`) después de realizar una transacción en JDBC. De esta manera, se asegura que las operaciones posteriores a la transacción se ejecuten como transacciones independientes y se confirmen automáticamente una vez que se completen.
 
 El motivo principal para restaurar el modo de autocommit a `true` después de una transacción es evitar que futuras operaciones no deseadas se agrupen accidentalmente en una transacción más grande.
+
+# DataSource 
+
+Es una interfaz que proporciona una forma estándar de obtener conexiones a una base de datos. Permite separar la lógica de conexión y gestión de conexiones del código de la aplicación. 
+
+### Driver Manager
+Driver Manager es una implementación básica y nativa de DataSource que se incluye en el paquete java.sql. 
+
+Permite establecer conexiones a una base de datos utilizando la URL de conexión y las credenciales de usuario y contraseña. 
+
+Aunque es funcional, no es la opción más eficiente y escalable, ya que puede generar cuellos de botella en aplicaciones con alta concurrencia debido a su enfoque en la conexión a la base de datos de una sola conexión a la vez.
+
+### H2 Pool Connection:
+H2 es una base de datos relacional escrita en Java que incluye una implementación de DataSource llamada "H2 Pool Connection". 
+
+Esta implementación proporciona un conjunto de conexiones preestablecidas (pool) que se reutilizan para evitar el costo de crear y cerrar conexiones de manera repetitiva. 
+
+Es una buena opción para aplicaciones que desean una solución simple y ligera para la gestión de conexiones a bases de datos H2.
+
+### HikariCP (Hikari Pool Connection):
+HikariCP es una biblioteca de conexión de alto rendimiento y ligera. Proporciona una implementación de DataSource llamada "Hikari Pool Connection" que utiliza un pool de conexiones de alta eficiencia. 
+
+HikariCP es conocido por su rápido tiempo de inicio y su bajo consumo de recursos, lo que lo convierte en una excelente elección para aplicaciones con alta concurrencia y cargas de trabajo pesadas.
+
+### Dbcp2 (Dbcp2 Pool Connection):
+Dbcp2 (Apache Commons DBCP) es otra biblioteca de conexión que proporciona una implementación de DataSource llamada "Dbcp2 Pool Connection". 
+
+Esta biblioteca es ampliamente utilizada y ofrece una variedad de configuraciones para ajustar el rendimiento y la escalabilidad de los pools de conexiones. 
+
+DBCP es una opción popular en aplicaciones de nivel empresarial debido a su flexibilidad y madurez.
+
+### C3P0 (3CPO Pool Connection):
+C3P0 es una biblioteca de conexión que también ofrece una implementación de DataSource llamada "C3P0 Pool Connection". 
+
+Proporciona funcionalidades avanzadas de pool de conexiones, como conexión y prueba de vida (connection and life testing), lo que permite mantener conexiones inactivas con vida para su reutilización. 
+
+Es una opción confiable y madura para la gestión de conexiones en entornos de alta concurrencia y aplicaciones de misión crítica.
